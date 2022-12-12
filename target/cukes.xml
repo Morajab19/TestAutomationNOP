@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="11" time="180.605">
+<testcase classname="user can filter products by color" name="_2" time="16.293">
+<failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#attribute\-option\-15&quot;}&#10;  (Session info: chrome=108.0.5359.99)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.6.0', revision: '79f1c02ae20'&#10;System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [3d0ed88e742a660760c75eba65ad884d, findElement {using=id, value=attribute-option-15}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.99, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:57261}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57261/devtoo..., se:cdpVersion: 108.0.5359.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 3d0ed88e742a660760c75eba65ad884d" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given user navigate to shoes category page..................................passed
+When user select red color..................................................failed
+Then the red shoes are displayed............................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#attribute\-option\-15"}
+  (Session info: chrome=108.0.5359.99)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.6.0', revision: '79f1c02ae20'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3d0ed88e742a660760c75eba65ad884d, findElement {using=id, value=attribute-option-15}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.99, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:57261}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57261/devtoo..., se:cdpVersion: 108.0.5359.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3d0ed88e742a660760c75eba65ad884d
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+	at Pages.Home_page.selectColor(Home_page.java:59)
+	at Step_Defs.ColorFilterStepDef.selectColor(ColorFilterStepDef.java:29)
+	at ✽.user select red color(file:///C:/Users/user/IdeaProjects/NOP_AutomationTesting/src/main/resources/Features/ColorFilter.feature:5)
+]]></failure>
+</testcase>
+<testcase classname="user manage the comparelist" name="user add two items to compare list" time="19.828">
+<system-out><![CDATA[Given user initiate comparelist.............................................passed
+When user open home page and navigates to Cell phones category..............passed
+And click on add to compare list button for HTC One M8 Android L 5.0 Lollipop and HTC One Mini Blue.passed
+And click on open compare list notification.................................passed
+Then the "HTC One M8 Android L 5.0 Lollipop" and "HTC One Mini Blue" are in the compare list.passed
+]]></system-out>
+</testcase>
+<testcase classname="user can manage his wishlist" name="user add item to wishlist" time="18.176">
+<system-out><![CDATA[Given Initiate wishlist.....................................................passed
+When user scrolls to Apple MacBook Pro 13-inch and clicks Add to wishlist Button.passed
+And user click on add to wishlist...........................................passed
+Then item is added to wishlist..............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="User login to the website" name="User enter valid email and valid password" time="14.398">
+<system-out><![CDATA[Given user navigate to the login page.......................................passed
+When enter email "moRajab@gmail.com"........................................passed
+And enter password as "Asdfgh"..............................................passed
+And click on Login Button...................................................passed
+Then user is navigated to the home page.....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="User login to the website" name="User enters invalid non existing email and password" time="14.725">
+<system-out><![CDATA[Given user navigate to the login page.......................................passed
+When enter email "moRajgcgcab@gmail.com"....................................passed
+And enter password as "Asdfgh"..............................................passed
+And click on Login Button...................................................passed
+Then invalid login error message appears....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="User login to the website" name="user enters email with invalid format" time="13.745">
+<system-out><![CDATA[Given user navigate to the login page.......................................passed
+When enter email "moRajabgcom"..............................................passed
+And enter password as "Asdfgh"..............................................passed
+And click on Login Button...................................................passed
+Then wrong email error message appears......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="User login to the website" name="user want to recover a forgotten password" time="14.556">
+<system-out><![CDATA[Given user navigate to the login page.......................................passed
+Given user clicks on forget password button.................................passed
+When enter email as "moRajab@gmail.com".....................................passed
+And click on Recover Button.................................................passed
+Then Email with instructions has been sent to user..........................passed
+]]></system-out>
+</testcase>
+<testcase classname="user can manage his cart by adding, updating or deleting items" name="user add product to his/her cart" time="18.731">
+<system-out><![CDATA[Given Initiate manage cart..................................................passed
+When user scrolls to Apple MacBook Pro 13-inch and clicks Add to cart Button.passed
+And enter quantity of "2" and click on ADD TO CART Button and open cart.....passed
+Then the product "Apple MacBook Pro 13-inch" is added successfully to the cart.passed
+]]></system-out>
+</testcase>
+<testcase classname="user can manage his cart by adding, updating or deleting items" name="user updates the quantity of added item" time="15.475">
+<system-out><![CDATA[Given Initiate manage cart..................................................passed
+When user opens the cart....................................................passed
+And type the updated quantity "4" and click on update cart..................passed
+Then the product quantity is updated to "4".................................passed
+]]></system-out>
+</testcase>
+<testcase classname="user can manage his cart by adding, updating or deleting items" name="user deletes a product from cart" time="14.647">
+<system-out><![CDATA[Given Initiate manage cart..................................................passed
+When user opens the cart....................................................passed
+And click on remove product.................................................passed
+Then product is deleted from the cart.......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="user can manage his cart by adding, updating or deleting items" name="user add existing product to his/her cart" time="18.985">
+<system-out><![CDATA[Given Initiate manage cart..................................................passed
+When user scrolls to Apple MacBook Pro 13-inch and clicks Add to cart Button.passed
+And enter quantity of "10" and click on ADD TO CART Button and open cart....passed
+Then the product "Apple MacBook Pro 13-inch" is added successfully to the cart.passed
+]]></system-out>
+</testcase>
+</testsuite>
